@@ -6,11 +6,11 @@
       "lastName": "Doe",
       "email": "john@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "11 JUNE 19:00",
-      "appointment": "22 JULY 14:00",
-      "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "viewed": "",
+      "appointment": "",
+      "interested": "",
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "2",
@@ -18,10 +18,10 @@
       "lastName": "Felmy",
       "email": "jonas@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "11 JUNE 19:00",
+      "viewed": "",
       "appointment": "22 JULY 14:00",
-      "interested": "true",
-      "offerAccepted": "false",
+      "interested": "",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -30,10 +30,10 @@
       "lastName": "Brand",
       "email": "gottfrid@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "11 JUNE 19:00",
+      "viewed": "",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -42,10 +42,10 @@
       "lastName": "Weiß",
       "email": "friedrich@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "11 JUNE 19:00",
+      "viewed": "15 JUNE 18:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -57,7 +57,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -66,11 +66,11 @@
       "lastName": "Redford",
       "email": "robert@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "11 JUNE 19:00",
+      "viewed": "02 JUNE 17:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "7",
@@ -78,11 +78,11 @@
       "lastName": "Muasi",
       "email": "marc@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "11 JUNE 19:00",
+      "viewed": "",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "8",
@@ -93,8 +93,8 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "9",
@@ -105,7 +105,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -117,7 +117,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": ""
     },
     {
@@ -129,7 +129,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -141,8 +141,8 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "",
       "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "13",
@@ -153,7 +153,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -165,7 +165,7 @@
       "viewed": "",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     },
     {
@@ -177,8 +177,8 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "",
       "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "16",
@@ -189,8 +189,8 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "",
       "interested": "true",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "17",
@@ -200,9 +200,9 @@
       "phone": "+49 152 236 1114",
       "viewed": "11 JUNE 19:00",
       "appointment": "",
-      "interested": "false",
-      "offerAccepted": "false",
-      "bid": "250.000€"
+      "interested": "",
+      "offerAccepted": "",
+      "bid": ""
     },
     {
       "id": "18",
@@ -213,7 +213,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "false",
+      "offerAccepted": "",
       "bid": "250.000€"
     }
   ]
