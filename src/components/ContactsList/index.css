@@ -1,0 +1,80 @@
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 60px -16px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 375px) {
+  .card-list {
+    display: flex;
+    /* justify-content: center;
+    margin: 60px -16px;
+    padding: 0px; */
+    background-color: blue;
+    /* flex-wrap: nowrap; */
+    overflow-x: auto;
+  }
+}
+
+.card {
+  display: flex;
+  flex: 0 0 25%;
+  min-width: 250px;
+  margin-bottom: 32px;
+  margin-top: 8px;
+  justify-content: center;
+  border: 1px solid #efefef;
+  margin: 1em;
+  min-width: 300px;
+}
+
+.card-personal-data {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.card-appointment,
+.card-viewed,
+.card-bid {
+  background: #9d9d9d;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card-bid {
+  background: #feb902;
+}
+
+.deco-circle {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5,
+.card-phone,
+.card-email {
+  font-size: 16px;
+  margin: 3px;
+}
+
+.card-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.75em;
+}
+
+h4 {
+  color: #4a4a4a;
+  font-size: 20px;
+}

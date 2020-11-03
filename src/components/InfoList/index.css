@@ -1,0 +1,33 @@
+.info-panel {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  /* border: 1px solid blue; */
+}
+
+.item {
+  /* border: 1px solid gray; */
+  display: flex;
+  flex-direction: column;
+  padding: 0em 1em;
+}
+
+.item p,
+h4 {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: normal;
+}
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item {
+  border-right: 1px solid #e6e6e6;
+}
+
+.item :nth-last-of-type() {
+  border-right: none;
+}

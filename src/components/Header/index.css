@@ -1,0 +1,24 @@
+.header-wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-content: flex-start; */
+  margin: 1em;
+}
+
+.logo-wrapper {
+  /* margin-right: 10em; */
+  /* display: inline; */
+}
+
+.icons-wrapper {
+  /* display: inline; */
+  /* justify-self: flex-end; */
+}
+
+/* .logo-wrapper {
+  margin: 1em;
+}
+
+.icons-wrapper img {
+  margin: 1em;
+} */
