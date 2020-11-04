@@ -32,14 +32,13 @@ function Dashboard(props) {
     }
   }, {});
 
-  console.log(groupInfo);
   const filteredCandidates = arrayOfContactsInObject.filter(
     (candidate) =>
       candidate.firstName.toLowerCase().includes(searchField.toLowerCase()) ||
       candidate.lastName.toLowerCase().includes(searchField.toLowerCase()) ||
       candidate.email.toLowerCase().includes(searchField.toLowerCase())
   );
-  console.log(filteredCandidates);
+
   return (
     <div className="wrapper">
       <div className="info-section">
