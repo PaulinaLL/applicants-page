@@ -13,7 +13,7 @@ function Header() {
     <div className="header-wrapper">
       <div className="logo-wrapper">
         <img alt="burgerMenu" src={burgerMenu}></img>
-        <img alt="McMaclerLogo" src={logo}></img>
+        <img alt="McMaklerLogo" src={logo}></img>
       </div>
       <div className="icons-wrapper">
         <img alt="contactSupportLogo" src={contactSupportIcon}></img>
