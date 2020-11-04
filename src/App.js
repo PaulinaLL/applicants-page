@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header/index";
-import Dashboard from "./components/Dashboard/index";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainComponent from "./components/MainComponent/index";
 
 let api_url =
   "https://raw.githubusercontent.com/PaulinaLL/mock-api/main/db.json";
@@ -39,15 +39,16 @@ function App() {
     return <div> Loading... </div>;
   } else {
     return (
-      <div className="App">
-        <Header contacts={data} />
-        <Dashboard contacts={data} />
-        <ul>
-          <li>AGB - </li>
-          <li> Datenschutz - </li>
-          <li> Impressum</li>
-        </ul>
-      </div>
+      // <div className="App">
+      <Router>
+        <Switch>
+          <Route
+            path="/"
+            render={(props) => <MainComponent {...props} contacts={data} />}
+          ></Route>
+        </Switch>
+      </Router>
+      // </div>
     );
   }
 }
