@@ -6,7 +6,7 @@ h3 {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  border: 1px solid yellow;
+  border: 1px solid orange;
   display: inline;
 }
 
@@ -17,17 +17,26 @@ h3 {
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
-    display: inline-block;
+    display: block;
+  }
+
+  .info-wrapper {
+    /* display: block; */
   }
 }
 
 .info-section {
   border: 1px solid red;
+  display: flex;
+}
+
+.info-section div:last-of-type {
+  border: none;
 }
 
 .info-wrapper {
-  display: flex;
-  justify-content: space-around;
+  display: inline-block;
+  margin-left: auto;
 }
 
 .wrapper {

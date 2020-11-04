@@ -6,24 +6,23 @@ function InfoList(props) {
     <div className="wrapper">
       <div className="info-panel">
         <div className="item">
-          <h4>{props.total}</h4>
+          <h4> {props.total ? props.total : 0}</h4>
           <p>Total</p>
         </div>
         <div className="item">
-          <h4>{props.stats.new}</h4>
+          <h4> {props.stats.new ? props.stats.new : 0}</h4>
           <p>New</p>
         </div>
         <div className="item">
-          <h4>{props.stats.viewed}</h4>
+          <h4> {props.stats.viewed ? props.stats.viewed : 0}</h4>
           <p>Viewed</p>
         </div>
         <div className="item">
-          <h4>{props.stats.appointment}</h4>
+          <h4>{props.stats.appointment ? props.stats.appointment : 0}</h4>
           <p>Appointment</p>
         </div>
         <div className="item">
-          {/* <h4>{props.stats.others}</h4> */}
-          <h4>x</h4>
+          <h4>{props.stats.others ? props.stats.others : 0}</h4>
           <p>Others</p>
         </div>
       </div>

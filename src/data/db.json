@@ -162,7 +162,7 @@
       "lastName": "Muller",
       "email": "steffen@gmail.com",
       "phone": "+49 152 236 1114",
-      "viewed": "",
+      "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
       "offerAccepted": "",
@@ -213,7 +213,7 @@
       "viewed": "11 JUNE 19:00",
       "appointment": "22 JULY 14:00",
       "interested": "true",
-      "offerAccepted": "",
+      "offerAccepted": "true",
       "bid": "250.000€"
     }
   ]
