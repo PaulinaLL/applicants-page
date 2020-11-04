@@ -1,12 +1,27 @@
-input,
+.search-wrapper,
 .filter-dropdown {
   border: 1px solid #e6e6e6;
-  padding: 1em;
+  /* padding: 0.75em; */
   border-radius: 4px;
+}
+input {
+  border: none;
+  height: 100%;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-wrapper img {
+  margin: 3px;
 }
 
 .filter-dropdown {
   display: flex;
+  justify-content: center;
+  align-items: center;
   color: #4a4a4a;
   /* margin: 1em; */
   font-size: 14px;
