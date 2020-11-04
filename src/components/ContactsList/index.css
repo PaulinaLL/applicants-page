@@ -28,6 +28,7 @@
   border: 1px solid #efefef;
   margin: 1em;
   min-width: 300px;
+  max-width: 400px;
 }
 
 .card-personal-data {
@@ -47,6 +48,9 @@
 
 .card-bid {
   background: #feb902;
+  display: inline-block;
+  max-width: 90px;
+  margin-top: 0px;
 }
 
 .deco-circle {
