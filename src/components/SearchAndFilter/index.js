@@ -2,12 +2,16 @@ import React from "react";
 import "./index.css";
 import loupe from "../../assets/Vector.png";
 
-function SearchAndFilter() {
+function SearchAndFilter(props) {
   return (
     <div className="search-filter-wrapper">
       <form>
         <img alt="loupe" src={loupe}></img>
-        <input type="text" placeholder="Search for applicant"></input>
+        <input
+          type="search"
+          placeholder="Search for applicant"
+          onChange={props.handleChange}
+        ></input>
         <div className="filter-dropdown">
           <p>Bids</p>
           <span className="triangle-up"></span>
