@@ -6,9 +6,10 @@ export function getInitialLetters(x, y) {
 }
 
 export function colorGenerator() {
-  var num = Math.round(0xffffff * Math.random());
-  var r = num >> 16;
-  var g = (num >> 8) & 255;
-  var b = num & 255;
-  return "rgb(" + r + ", " + g + ", " + b + ", 0.5" + ")";
+  let num = Math.round(0xffffff * Math.random());
+  let r = num >> 16;
+  let g = (num >> 8) & 255;
+  let b = num & 255;
+  let t = 0.5;
+  return "rgb(" + r + ", " + g + ", " + b + ", " + t + ")";
 }
