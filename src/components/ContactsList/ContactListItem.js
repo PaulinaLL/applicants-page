@@ -1,18 +1,15 @@
 import React from "react";
 import "./index.css";
+import { getInitialLetters, colorGenerator } from "../../helpers";
 
 function ContactsListItem(props) {
-  function getInitialLetters(x, y) {
-    const firstLetterFirstName = x.split("")[0];
-    const firstLetterLastName = y.split("")[0];
-    const initials = firstLetterFirstName + firstLetterLastName;
-    return initials;
-  }
-
   return (
     <li key={props.item.id} className="card">
       <div className="card-avatar">
-        <div className="deco-circle">
+        <div
+          className="deco-circle"
+          style={{ backgroundColor: colorGenerator(), opacity: 0.6 }}
+        >
           <h5>
             {getInitialLetters(props.item.firstName, props.item.lastName)}
           </h5>
