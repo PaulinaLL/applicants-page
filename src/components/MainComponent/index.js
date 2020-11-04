@@ -7,6 +7,11 @@ function MainComponent(props) {
     <>
       <Header {...props} />
       <Dashboard {...props} />
+      <ul>
+        <li>AGB - </li>
+        <li> Datenschutz - </li>
+        <li> Impressum</li>
+      </ul>
     </>
   );
 }
