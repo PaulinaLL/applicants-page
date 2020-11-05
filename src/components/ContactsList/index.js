@@ -42,16 +42,21 @@ function ContactsList(props) {
       <h4 className="category-title">
         Interested ({props.stats.interested ? props.stats.interested : 0})
       </h4>
-      {interestedResult.map((item) => {
-        return <ContactsListItem key={item.id} item={item} />;
-      })}
+      <ul className="card-list">
+        {interestedResult.map((item) => {
+          return <ContactsListItem key={item.id} item={item} />;
+        })}
+      </ul>
+
       <h4 className="category-title">
         Offer accepted (
         {props.stats.offerAccepted ? props.stats.offerAccepted : 0})
       </h4>
-      {offerAcceptedResult.map((item) => {
-        return <ContactsListItem key={item.id} item={item} />;
-      })}
+      <ul className="card-list">
+        {offerAcceptedResult.map((item) => {
+          return <ContactsListItem key={item.id} item={item} />;
+        })}
+      </ul>
     </div>
   );
 }
