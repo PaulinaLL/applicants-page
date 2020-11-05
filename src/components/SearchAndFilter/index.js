@@ -5,7 +5,11 @@ import loupe from "../../assets/Vector.png";
 function SearchAndFilter(props) {
   return (
     <div className="search-filter-wrapper">
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <div className="search-wrapper">
           <img alt="loupe" src={loupe}></img>
           <input
