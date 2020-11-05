@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 import { withRouter } from "react-router-dom";
 import SearchAndFilter from "../SearchAndFilter/index";
 import InfoList from "../InfoList/index";
 import ContactList from "../ContactsList/index";
 import arrow from "../../assets/back.svg";
+import queryString from "query-string";
 
 function Dashboard(props) {
-  const [searchField, setSearchFieldState] = useState("");
+  // const [searchField, setSearchFieldState] = useState("");
   const total = props.contacts.applicants.length;
   const arrayOfContactsInObject = props.contacts.applicants;
+  const parsed = queryString.parse(props.location.search);
+  const searchWord = parsed.search;
+  console.log(searchWord);
+
+  // group info to display stats
   const groupInfo = arrayOfContactsInObject.reduce((groups, person) => {
     const {
       viewed = 0,
@@ -32,16 +38,28 @@ function Dashboard(props) {
   }, {});
 
   const updateSearch = (searchString) => {
-    setSearchFieldState(searchString);
+    // setSearchFieldState(searchString);
     props.history.push(`/?search=${searchString}`);
   };
 
-  const filteredCandidates = arrayOfContactsInObject.filter(
-    (candidate) =>
-      candidate.firstName.toLowerCase().includes(searchField.toLowerCase()) ||
-      candidate.lastName.toLowerCase().includes(searchField.toLowerCase()) ||
-      candidate.email.toLowerCase().includes(searchField.toLowerCase())
-  );
+  // if !searchWord whole arrayOfContactsInObject will be passed down, else just the search result object
+
+  let result;
+  function filterCandidate() {
+    if (searchWord) {
+      result = arrayOfContactsInObject.filter(
+        (candidate) =>
+          candidate.firstName
+            .toLowerCase()
+            .includes(searchWord.toLowerCase()) ||
+          candidate.lastName.toLowerCase().includes(searchWord.toLowerCase()) ||
+          candidate.email.toLowerCase().includes(searchWord.toLowerCase())
+      );
+    } else {
+      result = arrayOfContactsInObject;
+    }
+    return result;
+  }
 
   return (
     <div className="wrapper">
@@ -53,7 +71,7 @@ function Dashboard(props) {
         </div>
       </div>
       <SearchAndFilter handleChange={(e) => updateSearch(e.target.value)} />
-      <ContactList stats={groupInfo} data={filteredCandidates} />
+      <ContactList stats={groupInfo} data={filterCandidate()} />
     </div>
   );
 }

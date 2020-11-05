@@ -2,9 +2,9 @@ import React from "react";
 import ContactsListItem from "./ContactListItem";
 
 function ContactsList(props) {
-  // const candidates = props.data.contacts.applicants;
   const candidates = props.data;
 
+  // setting 4 objects from passed data to display in different categories
   let appointmentResult = candidates.filter(
     (candidate) => candidate.appointment !== "" && candidate.viewed === ""
   );
