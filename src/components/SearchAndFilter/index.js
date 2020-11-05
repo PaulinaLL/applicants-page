@@ -11,7 +11,9 @@ function SearchAndFilter(props) {
         }}
       >
         <div className="search-wrapper">
-          <img alt="loupe" src={loupe}></img>
+          <button>
+            <img alt="loupe" src={loupe}></img>
+          </button>
           <input
             type="search"
             placeholder="Search for applicant"
