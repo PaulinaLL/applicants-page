@@ -21,7 +21,7 @@ function ContactsList(props) {
 
   return (
     <div>
-      <h4>
+      <h4 className="category-title">
         Appointment set ({props.stats.appointment ? props.stats.appointment : 0}
         )
       </h4>
@@ -30,20 +30,22 @@ function ContactsList(props) {
           return <ContactsListItem key={item.id} item={item} />;
         })}
       </ul>
-      <h4>Property viewed ({props.stats.viewed ? props.stats.viewed : 0})</h4>
+      <h4 className="category-title">
+        Property viewed ({props.stats.viewed ? props.stats.viewed : 0})
+      </h4>
 
       <ul className="card-list">
         {viewedResult.map((item) => {
           return <ContactsListItem key={item.id} item={item} />;
         })}
       </ul>
-      <h4>
+      <h4 className="category-title">
         Interested ({props.stats.interested ? props.stats.interested : 0})
       </h4>
       {interestedResult.map((item) => {
         return <ContactsListItem key={item.id} item={item} />;
       })}
-      <h4>
+      <h4 className="category-title">
         Offer accepted (
         {props.stats.offerAccepted ? props.stats.offerAccepted : 0})
       </h4>
