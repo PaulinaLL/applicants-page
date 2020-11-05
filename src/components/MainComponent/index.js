@@ -48,9 +48,9 @@ const MainComponent = ({
         <Header contacts={data} />
         <Dashboard contacts={data} />
         <ul>
-          <li>AGB - </li>
-          <li> Datenschutz - </li>
-          <li> Impressum</li>
+          <li>AGB </li>
+          <li> • Datenschutz </li>
+          <li> • Impressum</li>
         </ul>
       </>
     );
