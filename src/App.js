@@ -14,7 +14,7 @@ function App() {
     const getData = () => {
       fetch(api_url)
         .then((res) => {
-          if (res.status >= 400) {
+          if (res.status >= 500) {
             throw new Error("Upss something went wrong (server error)!");
           }
           return res.json();
