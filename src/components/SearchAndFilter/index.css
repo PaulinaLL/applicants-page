@@ -7,6 +7,7 @@
 input {
   border: none;
   height: 100%;
+  background: #f8f8f8;
 }
 
 .search-wrapper {
@@ -15,7 +16,7 @@ input {
   align-items: center;
 }
 .search-wrapper img {
-  margin: 3px;
+  margin: 0px 10px;
 }
 
 .filter-dropdown {
@@ -25,7 +26,8 @@ input {
   color: #4a4a4a;
   /* margin: 1em; */
   font-size: 14px;
-  padding: 1px 20px;
+  /* padding: 1px 20px; */
+  padding: 0em 1em;
   margin: 0em 1em;
 }
 
@@ -47,4 +49,5 @@ form {
   display: inline-block;
   align-self: center;
   margin-left: 5px;
+  margin-top: 5px;
 }
