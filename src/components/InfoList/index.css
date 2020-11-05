@@ -9,7 +9,7 @@
   /* border: 1px solid gray; */
   display: flex;
   flex-direction: column;
-  padding: 0em 1em;
+  padding: 0em 2em;
 }
 
 .item p,
@@ -41,5 +41,8 @@ h4 {
   .wrapper-panel {
     margin-top: 0.75em;
     display: none;
+  }
+  .text-logo-wrapper img {
+    max-width: 110px;
   }
 }
