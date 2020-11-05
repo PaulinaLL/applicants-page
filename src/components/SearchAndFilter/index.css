@@ -60,6 +60,11 @@ form {
   margin: 10px;
 }
 
+button {
+  border: none;
+  background-color: #f8f8f8;
+}
+
 @media only screen and (max-width: 600px) {
   form {
     flex-direction: column;
