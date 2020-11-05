@@ -22,13 +22,17 @@ function ContactsListItem(props) {
           <p className="card-phone">{props.item.phone}</p>
           <p className="card-email">{props.item.email}</p>
 
-          <p className="card-appointment">
+          <p className="card-label">
             {props.item.appointment && `APPOINTMENT ${props.item.appointment}`}
           </p>
-          <p className="card-viewed">
+          <p className="card-label">
             {props.item.viewed && `VIEWED ${props.item.viewed}`}
           </p>
-          <p className="card-bid">
+          <p className="card-label">{props.item.interested && "INTERESTED"}</p>
+          <p className="card-label">
+            {props.item.offerAccepted && "OFFFER ACCEPTED"}
+          </p>
+          <p className="card-label bid">
             {props.item.bid && `BID ${props.item.bid}`}
           </p>
         </div>
