@@ -1,41 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./index.css";
-import queryString from "query-string";
+import { withRouter } from "react-router-dom";
 import SearchAndFilter from "../SearchAndFilter/index";
 import InfoList from "../InfoList/index";
 import ContactList from "../ContactsList/index";
-import arrow from "../../assets/arrow.png";
+import arrow from "../../assets/back.svg";
 
 function Dashboard(props) {
   const [searchField, setSearchFieldState] = useState("");
   const total = props.contacts.applicants.length;
   const arrayOfContactsInObject = props.contacts.applicants;
-  const [filteredValue, setFilteredValue] = useState(arrayOfContactsInObject);
-  const parsed = queryString.parse(props.location.search);
-  console.log(filteredValue);
-
-  useEffect(() => {
-    let filteredCandidates;
-    console.log(parsed);
-    if (parsed.search) {
-      filteredCandidates = arrayOfContactsInObject.filter(
-        (candidate) =>
-          candidate.firstName
-            .toLowerCase()
-            .includes(parsed.search.toLowerCase()) ||
-          candidate.lastName
-            .toLowerCase()
-            .includes(parsed.search.toLowerCase()) ||
-          candidate.email.toLowerCase().includes(parsed.search.toLowerCase())
-      );
-    } else {
-      filteredCandidates = arrayOfContactsInObject;
-    }
-    setFilteredValue(filteredCandidates);
-    props.setSearchQuery(searchField);
-  }, [searchField]);
-
-  console.log(filteredValue);
   const groupInfo = arrayOfContactsInObject.reduce((groups, person) => {
     const {
       viewed = 0,
@@ -57,10 +31,18 @@ function Dashboard(props) {
     }
   }, {});
 
-  const handleChange = (e) => {
-    setSearchFieldState(e.target.value);
+  const updateSearch = (searchString) => {
+    setSearchFieldState(searchString);
+    props.history.push(`/?search=${searchString}`);
   };
-  console.log(filteredValue);
+
+  const filteredCandidates = arrayOfContactsInObject.filter(
+    (candidate) =>
+      candidate.firstName.toLowerCase().includes(searchField.toLowerCase()) ||
+      candidate.lastName.toLowerCase().includes(searchField.toLowerCase()) ||
+      candidate.email.toLowerCase().includes(searchField.toLowerCase())
+  );
+
   return (
     <div className="wrapper">
       <div className="info-section">
@@ -70,18 +52,9 @@ function Dashboard(props) {
           <InfoList stats={groupInfo} total={total} />
         </div>
       </div>
-      <SearchAndFilter
-        // handleChange={(e) => setSearchFieldState(e.target.value)}
-        handleChange={handleChange}
-      />
-      <ContactList
-        stats={groupInfo}
-        // data={filteredCandidates}
-        data={filteredValue}
-        filteredValue={props.filteredValue}
-      />
+      <SearchAndFilter handleChange={(e) => updateSearch(e.target.value)} />
+      <ContactList stats={groupInfo} data={filteredCandidates} />
     </div>
   );
 }
-
-export default Dashboard;
+export default withRouter(Dashboard);
