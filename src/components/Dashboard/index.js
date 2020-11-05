@@ -46,7 +46,7 @@ function Dashboard(props) {
   return (
     <div className="wrapper">
       <div className="info-section">
-        <img alt="arrow-left" src={arrow} height="16px"></img>
+        <img alt="arrow-left" src={arrow}></img>
         <h3>Applicants</h3>
         <div className="info-wrapper">
           <InfoList stats={groupInfo} total={total} />

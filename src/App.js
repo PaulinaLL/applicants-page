@@ -5,11 +5,13 @@ import MainComponent from "./components/MainComponent/index";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={MainComponent}></Route>
-      </Switch>
-    </Router>
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route exact path="/" component={MainComponent}></Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

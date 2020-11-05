@@ -6,29 +6,27 @@ h3 {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   display: inline;
+  color: rgba(74, 74, 74, 1);
+  margin: 0.75em;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   h3 {
-    color: #4a4a4a;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0px;
     text-align: left;
     display: block;
   }
-
-  .info-wrapper {
-    /* display: block; */
-  }
 }
 
 .info-section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
+  margin: 0em 1em;
 }
 
 .info-section div:last-of-type {
@@ -41,6 +39,13 @@ h3 {
 }
 
 .wrapper {
-  background-color: white;
-  margin: 1em;
+  /* background-color: white; */
+  margin: 0em 1.5em 1.5em 1.5em;
+  background-color: #f8f8f8;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0em;
+  }
 }

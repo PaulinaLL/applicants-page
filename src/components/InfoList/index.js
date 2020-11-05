@@ -3,7 +3,7 @@ import "./index.css";
 
 function InfoList(props) {
   return (
-    <div className="wrapper">
+    <div className="wrapper-panel">
       <div className="info-panel">
         <div className="item">
           <h4> {props.total ? props.total : 0}</h4>
