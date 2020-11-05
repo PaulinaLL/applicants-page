@@ -14,6 +14,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid brown; */
 }
 .search-wrapper img {
   margin: 0px 10px;
@@ -24,21 +25,20 @@ input {
   justify-content: center;
   align-items: center;
   color: #4a4a4a;
-  /* margin: 1em; */
   font-size: 14px;
-  /* padding: 1px 20px; */
   padding: 0em 1em;
   margin: 0em 1em;
+  /* border: 1px solid black; */
 }
 
 .search-filter-wrapper {
   display: flex;
   margin: 1em;
+  /* border: 1px solid chartreuse; */
 }
 
 form {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .triangle-up {
@@ -50,4 +50,29 @@ form {
   align-self: center;
   margin-left: 5px;
   margin-top: 5px;
+}
+.test {
+  display: flex;
+  /* border: 1px solid violet; */
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    flex-direction: column;
+    margin-left: 0em;
+    flex-grow: 1;
+  }
+
+  .search-wrapper {
+    padding: 0.75em;
+    justify-content: left;
+  }
+
+  .filter-dropdown:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .test {
+    margin: 1em 0em;
+  }
 }

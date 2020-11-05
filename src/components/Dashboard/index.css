@@ -12,7 +12,7 @@ h3 {
   margin: 0.75em;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   h3 {
     font-size: 20px;
     line-height: 24px;
@@ -20,14 +20,10 @@ h3 {
     text-align: left;
     display: block;
   }
-
-  .info-wrapper {
-    /* display: block; */
-  }
 }
 
 .info-section {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
   margin: 0em 1em;
@@ -46,4 +42,10 @@ h3 {
   /* background-color: white; */
   margin: 0em 1.5em 1.5em 1.5em;
   background-color: #f8f8f8;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0em;
+  }
 }
