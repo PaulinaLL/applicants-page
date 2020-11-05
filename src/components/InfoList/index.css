@@ -31,3 +31,7 @@ h4 {
 .item :nth-last-of-type() {
   border-right: none;
 }
+
+.wrapper-panel {
+  margin-top: 0.75em;
+}
