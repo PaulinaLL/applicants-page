@@ -13,7 +13,9 @@ function Header() {
     <div className="header-wrapper">
       <div className="logo-wrapper">
         <img alt="burgerMenu" src={burgerMenu}></img>
-        <img alt="McMaklerLogo" src={logo}></img>
+        <div className="text-logo-wrapper">
+          <img alt="McMaklerLogo" src={logo}></img>
+        </div>
       </div>
       <div className="icons-wrapper">
         <img alt="contactSupportLogo" src={contactSupportIcon}></img>
