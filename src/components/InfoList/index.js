@@ -10,7 +10,7 @@ function InfoList(props) {
           <p>Total</p>
         </div>
         <div className="item">
-          <h4> {props.stats.new ? props.stats.new : 0}</h4>
+          <h4> {props.stats.interested ? props.stats.interested : 0}</h4>
           <p>New</p>
         </div>
         <div className="item">
@@ -22,7 +22,11 @@ function InfoList(props) {
           <p>Appointment</p>
         </div>
         <div className="item">
-          <h4>{props.stats.others ? props.stats.others : 0}</h4>
+          <h4>
+            {props.stats.others && props.stats.offerAccepted
+              ? props.stats.others + props.stats.offerAccepted
+              : 0}
+          </h4>
           <p>Others</p>
         </div>
       </div>

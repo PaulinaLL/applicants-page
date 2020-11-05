@@ -33,17 +33,16 @@
   color: #4a4a4a;
 }
 
-.card-appointment,
-.card-viewed,
-.card-bid {
+.card-label {
   background: #9d9d9d;
   border-radius: 3px;
   color: white;
   font-size: 12px;
   font-weight: bold;
+  padding: 0px 7px;
 }
 
-.card-bid {
+.bid {
   background: #feb902;
   display: inline-block;
   max-width: 90px;

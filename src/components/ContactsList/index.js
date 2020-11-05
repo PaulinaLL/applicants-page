@@ -6,13 +6,13 @@ function ContactsList(props) {
 
   // setting 4 objects from passed data to display in different categories
   let appointmentResult = candidates.filter(
-    (candidate) => candidate.appointment !== "" && candidate.viewed === ""
+    (candidate) => candidate.appointment !== ""
   );
 
   let viewedResult = candidates.filter((candidate) => candidate.viewed !== "");
 
   let interestedResult = candidates.filter(
-    (candidate) => candidate.interested !== "" && candidate.appointment === ""
+    (candidate) => candidate.interested !== ""
   );
 
   let offerAcceptedResult = candidates.filter(
