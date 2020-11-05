@@ -28,6 +28,7 @@ h3 {
 .info-section {
   border: 1px solid red;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .info-section div:last-of-type {
