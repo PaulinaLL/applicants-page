@@ -1,23 +1,28 @@
 .search-wrapper,
 .filter-dropdown {
   border: 1px solid #e6e6e6;
-  /* padding: 0.75em; */
   border-radius: 4px;
 }
 input {
   border: none;
-  height: 100%;
+  width: 100%;
   background: #f8f8f8;
+  padding: 1em;
 }
 
 .search-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid brown; */
+  min-width: 300px;
 }
 .search-wrapper img {
   margin: 0px 10px;
+}
+
+.search-wrapper {
+  justify-content: left;
+  margin: 0em 1em 0em 0em;
 }
 
 .filter-dropdown {
@@ -28,20 +33,18 @@ input {
   font-size: 14px;
   padding: 0em 1em;
   margin: 0em 1em;
-  /* border: 1px solid black; */
 }
 
 .search-filter-wrapper {
   display: flex;
   margin: 1em;
-  /* border: 1px solid chartreuse; */
 }
 
 form {
   display: flex;
 }
 
-.triangle-up {
+.triangle-down {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 4px solid transparent;
@@ -51,9 +54,8 @@ form {
   margin-left: 5px;
   margin-top: 5px;
 }
-.test {
+.filter-wrapper {
   display: flex;
-  /* border: 1px solid violet; */
 }
 
 .filter-dropdown p {
@@ -73,7 +75,7 @@ button {
   }
 
   .search-wrapper {
-    padding: 0.75em;
+    /* padding: 0.75em; */
     justify-content: left;
   }
 
@@ -81,7 +83,7 @@ button {
     margin-left: 0;
   }
 
-  .test {
+  .filter-wrapper {
     margin: 1em 0em;
   }
 }
