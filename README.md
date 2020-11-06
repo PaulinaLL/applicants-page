@@ -1,6 +1,6 @@
 ## Applicants Page
 
-This project was created as a part of the recruting process. I really enjoyed this assignment, have learned a lot, also in time management and I wanted to thank you for this opportunity, your time and consideration! :bouquet:
+This project was created as a part of the recruting process. I really enjoyed this assignment, it was an interesting challenge. For this reason, I would like to thank you for this opportunity and consideration! :bouquet:
 
 I would really appreciate your feedback, it helps me grow! :seedling:
 
