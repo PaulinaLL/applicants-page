@@ -5,7 +5,7 @@ This project was created as a part of the recruting process. I really enjoyed th
 I would really appreciate your feedback, it helps me grow! :seedling:
 
 
-### start 
+### Start 
 - clone the repo
 - in the project directory run `npm install`
 - run `npm start`, runs the app in the development mode
@@ -33,7 +33,7 @@ I would really appreciate your feedback, it helps me grow! :seedling:
 - [x] build a mobile first responsive design
 - [x] solution deployed
 
-### live version
+### Live version
 https://applicants-page-paulina.netlify.app/
 
 
