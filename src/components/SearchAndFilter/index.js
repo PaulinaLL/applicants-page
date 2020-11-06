@@ -20,14 +20,14 @@ function SearchAndFilter(props) {
             onChange={props.handleChange}
           ></input>
         </div>
-        <div className="test">
+        <div className="filter-wrapper">
           <div className="filter-dropdown">
             <p>Bids</p>
-            <span className="triangle-up"></span>
+            <span className="triangle-down"></span>
           </div>
           <div className="filter-dropdown">
             <p>Status</p>
-            <span className="triangle-up"></span>
+            <span className="triangle-down"></span>
           </div>
         </div>
       </form>
