@@ -18,14 +18,13 @@
 .card {
   display: flex;
   flex: 0 0 25%;
-  min-width: 250px;
   margin-bottom: 32px;
   margin-top: 8px;
   justify-content: center;
   border: 1px solid #efefef;
   margin: 1em;
-  min-width: 300px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 300px;
 }
 
 .card-personal-data {
