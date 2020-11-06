@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../Header/index";
 import Dashboard from "../Dashboard/index";
+import "./index.css";
 
 let api_url =
   "https://raw.githubusercontent.com/PaulinaLL/mock-api/main/db.json";
@@ -47,10 +48,16 @@ const MainComponent = ({
       <>
         <Header contacts={data} />
         <Dashboard contacts={data} />
-        <ul>
+        <ul className="footer-links">
           <li>AGB </li>
-          <li> • Datenschutz </li>
-          <li> • Impressum</li>
+          <li>
+            <span>•</span>
+          </li>
+          <li>Datenschutz </li>
+          <li>
+            <span>•</span>
+          </li>
+          <li>Impressum</li>
         </ul>
       </>
     );
