@@ -23,7 +23,6 @@ h3 {
 }
 
 .info-section {
-  /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
   margin: 0em 1em;
@@ -39,7 +38,6 @@ h3 {
 }
 
 .wrapper {
-  /* background-color: white; */
   margin: 0em 1.5em 1.5em 1.5em;
   background-color: #f8f8f8;
 }

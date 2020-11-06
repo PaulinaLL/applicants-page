@@ -32,21 +32,15 @@ img {
   }
 
   .logo-wrapper {
-    /* border: 1px solid red; */
     flex-grow: 1;
   }
 
   .text-logo-wrapper {
-    /* border: 1px solid blue; */
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  /* .icons-wrapper {
-    border: 1px solid yellow;
-  } */
 
   .header-wrapper {
     display: flex;
