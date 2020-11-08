@@ -16,6 +16,7 @@ I would really appreciate your feedback, it helps me grow! :seedling:
 - CSS
 - JavaScript
 - React
+- React Router
 
 ### Requirements
 - [x] mock the api response
